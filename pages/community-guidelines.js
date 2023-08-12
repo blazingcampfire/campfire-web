@@ -59,7 +59,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="">Respect Others' Privacy</span>
+          <span className="">Respect Others&pos; Privacy</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
