@@ -23,7 +23,7 @@ const communityGuidelines = () => {
           </filter>
           <rect width="100%" height="100%" filter="url(#noise)"></rect>
         </svg>
-        <main className="flex flex-col text- items-center justify-start h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
+        <main className="flex flex-col items-center justify-start h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
         <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -32,9 +32,9 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] text-[40px] md:mt-[25px] md:mb-[37px] font-bold md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100] "
+            className="relative md:ml-[-10px] mt-[18px] text-center text-[40px] mb-6 md:mt-[25px] md:mb-[37px] font-bold lg:text-[60px] text-[#f5f7f9] tracking-[-2px] z-[100] "
           >
-          <span className="">Community Guidelines</span>
+          <span className="mb-5">Community Guidelines</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -57,10 +57,10 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] mb-6 text-center text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
           {/*eslint-disable-next-line react/no-unescaped-entities*/}
-          <span className="">Respect Other's Privacy</span>
+          <span className="text-center">Respect Other's Privacy</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -82,9 +82,9 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] mb-6 text-center md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="">No Bullying</span>
+          <span className="text-center mb-5">No Bullying</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -106,9 +106,9 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] mb-6 md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="">Have Fun</span>
+          <span className="mb-5">Have Fun</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -118,7 +118,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="text-center font-semibold mt-10"
+            className="text-center font-semibold"
           >
             Contribute to your university’s campfire by participating and interacting with the app and
         </motion.p>
@@ -130,7 +130,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }} 
-            className='text-peach font-extrabold'>
+            className='text-[#f5f7f9] font-extrabold'>
             feeding the fire! 
         </motion.p>
         </main>
