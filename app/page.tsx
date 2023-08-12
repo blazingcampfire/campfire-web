@@ -253,7 +253,7 @@ export default function Home() {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="flex flex-row justify-center items-center z-20 mx-0 mb-0 mt-20 md:mt-10 md:mb-[35px] max-w-2xl md:space-x-8"
+            className="flex flex-row justify-center items-center z-20 mx-0 mb-0 mt-20 md:mt-10 md:mb-[35px] md:w-44 md:max-w-2xl md:space-x-8"
           >
             <Link
                 href="https://www.apple.com/app-store/"
