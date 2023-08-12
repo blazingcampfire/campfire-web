@@ -41,7 +41,6 @@ export default function Home() {
           >
           <span className="text-[#f5f7f9]">Campfire</span>
           </motion.h1>
-
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
