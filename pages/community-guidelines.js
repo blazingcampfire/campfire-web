@@ -7,8 +7,23 @@ import { useEffect } from "react";
 const communityGuidelines = () => {
   return (
     <AnimatePresence>
-      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-[#F2F3F5] font-inter overflow-hidden items-center">
-        <main className="flex flex-col items-center justify-start h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
+      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-peach text-[#f5f7f9] font-inter overflow-hidden items-center">
+      <svg
+          style={{ filter: "contrast(125%) brightness(110%)" }}
+          className="fixed z-[1] w-full h-full opacity-[35%]"
+        >
+          <filter id="noise">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency=".7"
+              numOctaves="3"
+              stitchTiles="stitch"
+            ></feTurbulence>
+            <feColorMatrix type="saturate" values="0"></feColorMatrix>
+          </filter>
+          <rect width="100%" height="100%" filter="url(#noise)"></rect>
+        </svg>
+        <main className="flex flex-col text- items-center justify-start h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
         <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,7 +32,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100] "
           >
           <span className="">Community Guidelines</span>
           </motion.h1>
@@ -42,7 +57,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
           <span className="">Respect Others' Privacy</span>
           </motion.h1>
@@ -66,7 +81,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
           <span className="">No Bullying</span>
           </motion.h1>
@@ -90,7 +105,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
           <span className="">Have Fun</span>
           </motion.h1>
