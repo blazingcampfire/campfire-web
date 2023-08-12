@@ -68,7 +68,7 @@ export default function Home() {
                 Unique
               </h2>
               <p className="text-[14px] leading-[20px] text-[#f5f7f9] font-normal">
-                From our design, to our product, to our team, there's nothing quite like us out there.
+                From our design, to our product, to our team, there&pos;s nothing quite like us out there.
               </p>
             </div>
             <div className="w-1/2">
