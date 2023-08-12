@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const communityGuidelines = () => {
   return (
     <AnimatePresence>
-      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-peach text-[#f5f7f9] font-inter overflow-hidden items-center">
+      <div className="min-h-[100vh] sm:min-h-screen w-screen flex flex-col relative bg-peach text-[#f5f7f9] font-inter overflow-hidden items-center space-y-8">
       <svg
           style={{ filter: "contrast(125%) brightness(110%)" }}
           className="fixed z-[1] w-full h-full opacity-[35%]"
@@ -32,7 +32,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] mt-[18px] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100] "
+            className="relative md:ml-[-10px] mt-[18px] text-[40px] md:mt-[25px] md:mb-[37px] font-bold md:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100] "
           >
           <span className="">Community Guidelines</span>
           </motion.h1>
@@ -59,7 +59,8 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[16vw] md:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="">Respect Others&pos; Privacy</span>
+          {/*eslint-disable-next-line react/no-unescaped-entities*/}
+          <span className="">Respect Other's Privacy</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -117,7 +118,7 @@ const communityGuidelines = () => {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="text-center font-semibold"
+            className="text-center font-semibold mt-10"
           >
             Contribute to your university’s campfire by participating and interacting with the app and
         </motion.p>
