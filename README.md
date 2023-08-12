@@ -1,2 +1,1 @@
-# campfire-web
-Campfire's web one-pager
+Campfire's one page website
