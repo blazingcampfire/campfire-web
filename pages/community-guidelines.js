@@ -34,7 +34,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] text-center text-[40px] mb-6 md:mt-[25px] md:mb-[37px] font-bold lg:text-[60px] text-[#f5f7f9] tracking-[-2px] z-[100] "
           >
-          <span className="mb-5">Community Guidelines</span>
+          <span className="mb-5">community guidelines</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -46,7 +46,7 @@ const communityGuidelines = () => {
             }}
             className="text-center font-semibold"
           >
-          At Campfire’s core, we value the safety, respect, and positive experience of every member in our community. Our dedicated team is committed to upholding these principles by enforcing our community guidelines. We ask that if you come across content that you believe violates the integrity of our mission, we ask that you aid us in enforcing these guidelines by reporting content. Thank you for being a part of our community and making it a better place for everyone.
+          at <span className='font-extrabold'>campfire’s</span> core, we value the safety, respect, and positive experience of every member in our community. our dedicated team is committed to upholding these principles by enforcing our community guidelines. if you come across content that you believe violates the integrity of our mission, we ask that you aid us in enforcing these guidelines by reporting content. thank you for being a part of our community and making it a better place for everyone.
 
           </motion.p>
           <motion.h1
@@ -60,7 +60,7 @@ const communityGuidelines = () => {
             className="relative md:ml-[-10px] mt-[18px] mb-6 text-center text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
           {/*eslint-disable-next-line react/no-unescaped-entities*/}
-          <span className="text-center">Respect Other's Privacy</span>
+          <span className="text-center">respect other's privacy</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -72,7 +72,7 @@ const communityGuidelines = () => {
             }}
             className="text-center font-semibold"
           >
-            Do not post personal information about anybody without their consent whether it is in the form of feed posts, profile pictures, comments, etc.
+            do not post personal information about anybody without their consent whether it is in the form of feed posts, profile pictures, comments, etc.
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -84,7 +84,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] mb-6 text-center md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="text-center mb-5">No Bullying</span>
+          <span className="text-center mb-5">no bullying</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -96,7 +96,7 @@ const communityGuidelines = () => {
             }}
             className="text-center font-semibold"
           >
-            Bullying, harassment, or any form of harmful behavior will not be tolerated. Treat others as you would like to be treated. If you wouldn’t do/say something to someone in person, do not make Campfire an outlet for such actions/comments.
+            bullying, harassment, or any form of harmful behavior will not be tolerated. treat others as you would like to be treated. if you wouldn’t do/say something to someone in person, do not make <span className='font-extrabold'>campfire</span> an outlet for such actions/comments.
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -108,7 +108,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] mb-6 md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="mb-5">Have Fun</span>
+          <span className="mb-5">have fun</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -120,7 +120,7 @@ const communityGuidelines = () => {
             }}
             className="text-center font-semibold"
           >
-            Contribute to your university’s campfire by participating and interacting with the app and
+            contribute to your university’s campfire by participating and interacting with the app and
         </motion.p>
         <motion.p
             initial={{ opacity: 0, y: 40 }}
