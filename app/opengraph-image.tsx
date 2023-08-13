@@ -24,7 +24,7 @@ export default async function OG() {
           justifyContent: "center",
           backgroundColor: "white",
           backgroundImage:
-            "linear-gradient(to bottom right, #FF9966 50%, #FF5559 50%)",
+            "linear-gradient(to bottom, #FF9966 75%, #FF5559 75%)",
         }}
       >
         <Logo/>
