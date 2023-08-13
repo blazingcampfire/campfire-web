@@ -22,8 +22,6 @@ export default async function OG() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "white",
-          backgroundImage:
-            "linear-gradient(to bottom, #FF9966 75%, #FF5559 75%)",
         }}
       >
         <Image src="/icon" alt="colored s'more"/>
