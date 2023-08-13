@@ -34,7 +34,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] text-center text-[40px] mb-6 md:mt-[25px] md:mb-[37px] font-bold lg:text-[60px] text-[#f5f7f9] tracking-[-2px] z-[100] "
           >
-          <span className="mb-5">community guidelines</span>
+          <span className="mb-5">community guidelines:</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -60,7 +60,7 @@ const communityGuidelines = () => {
             className="relative md:ml-[-10px] mt-[18px] mb-6 text-center text-[#f5f7f9] md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] leading-[0.9] tracking-[-2px] z-[100]"
           >
           {/*eslint-disable-next-line react/no-unescaped-entities*/}
-          <span className="text-center">respect other's privacy</span>
+          <span className="text-center">respect others' privacy.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -84,7 +84,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] mb-6 text-center md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="text-center mb-5">no bullying</span>
+          <span className="text-center mb-5">no bullying.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
@@ -108,7 +108,7 @@ const communityGuidelines = () => {
             }}
             className="relative md:ml-[-10px] mt-[18px] mb-6 md:mt-[25px] md:mb-[37px] font-bold text-[40px] lg:text-[60px] text-[#f5f7f9] leading-[0.9] tracking-[-2px] z-[100]"
           >
-          <span className="mb-5">have fun</span>
+          <span className="mb-5">have fun!</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
