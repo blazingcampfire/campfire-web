@@ -3,11 +3,11 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://demo.useliftoff.com",
+      url: "https://www.campfireco.app/",
       lastModified: new Date(),
     },
     {
-      url: "https://demo.useliftoff.com/demo",
+      url: "https://www.campfireco.app/",
       lastModified: new Date(),
     },
   ];
