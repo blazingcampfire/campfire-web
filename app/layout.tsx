@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   title: "campfire - feed the fire ",
   openGraph: {
     title: "campfire - feed the fire",
-    // description:
-    //   "Liftoff is an AI-powered mock interview platform that helps you practice for your next job interview.",
-    // images: [
-    //   {
-    //     url: "https://demo.useliftoff.com/opengraph-image",
-    //   },
-    // ],
+    description:
+      "campfire is a college social media platform where everyone on campus can feel the warmth & vibrance of their community, and everyone can feed the fire.",
+    images: [
+      {
+        url: "http://www.campfireco.app/opengraph-image",
+      },
+    ],
   },
-  themeColor: "#FFF",
+  themeColor: "#FF5559",
 };
 
 export default async function RootLayout({
