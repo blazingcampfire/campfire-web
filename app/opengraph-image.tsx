@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Logo from "@/app/logo";
+import Image from "next/image";
 import { ImageResponse } from "next/server";
-
 export const runtime = "edge";
 export const alt = "Precedent - Building blocks for your Next.js project";
 export const contentType = "image/png";
@@ -27,7 +26,7 @@ export default async function OG() {
             "linear-gradient(to bottom, #FF9966 75%, #FF5559 75%)",
         }}
       >
-        <Logo/>
+        <Image src="/icon" alt="colored s'more"/>
       </div>
     ),
     {
