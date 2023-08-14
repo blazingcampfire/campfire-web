@@ -38,7 +38,7 @@ export default function Home() {
           duration: 0.95,
           ease: [0.165, 0.84, 0.44, 1],
         }}
-        className="flex flex-col items-center mt-20">
+        className="flex flex-col items-center mt-8 md:mt-20">
         <Logo/>
         <motion.h1
             initial={{ opacity: 0, y: 40 }}
