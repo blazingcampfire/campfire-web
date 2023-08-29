@@ -112,7 +112,7 @@ export default function Home() {
                 style={{
                   boxShadow: "0 1px 1px #0c192714, 0 1px 3px #0c192724",  }}
               >
-                <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                <span className="w-5 h-5 rounded-full bg-peach flex items-center justify-center">
                   <svg
                     className="w-[16px] h-[16px] text-white"
                     fill="none"
