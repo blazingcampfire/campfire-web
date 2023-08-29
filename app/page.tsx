@@ -89,7 +89,7 @@ export default function Home() {
                 community
               </h2>
               <p className="text-[10px] md:text-[14px] leading-[20px] text-[#f5f7f9] font-normal">
-              {/* eslint-disable-next-line react/no-unescaped-entities*/}
+              {/*eslint-disable-next-line react/no-unescaped-entities*/}
               gather 'round and share your stories on the hottest new app on campus!
               </p>
             </div>
