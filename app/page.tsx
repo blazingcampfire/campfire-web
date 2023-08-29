@@ -268,7 +268,7 @@ export default function Home() {
             }}
             className="">
             <Link
-                href="https://www.apple.com/app-store/"
+                href="https://apps.apple.com/us/app/campfire-feed-the-fire/id6462723091"
                 className=""
                 style={{
                   boxShadow: "0 1px 1px #0c192714, 0 1px 3px #0c192724",
