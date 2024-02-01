@@ -27,7 +27,7 @@ export default async function handler(req: any, res: any) {
         if (err) return reject(err);
         resolve({ fields, files });
       });
-    }
+    },
   );
 
   const videoFile = fData.files.file;
@@ -37,7 +37,7 @@ export default async function handler(req: any, res: any) {
   try {
     const resp = await openai.createTranscription(
       fs.createReadStream(videoFilePath),
-      "whisper-1"
+      "whisper-1",
       // Uncomment the line below if you would also like to capture filler words:
       // "Please include any filler words such as 'um', 'uh', 'er', or other disfluencies in the transcription. Make sure to also capitalize and punctuate properly."
     );

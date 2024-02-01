@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import { Metadata } from "next";
-import { Lexend_Deca } from "next/font/google"
+import { Lexend_Deca } from "next/font/google";
 
-const lexendDeca = Lexend_Deca({ subsets: ["latin"] })
+const lexendDeca = Lexend_Deca({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "campfire - feed the fire ",
   openGraph: {
@@ -25,7 +25,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`scroll-smooth antialiased [font-feature-settings:'ss01'] ${lexendDeca.className}`}>
+      <body
+        className={`scroll-smooth antialiased [font-feature-settings:'ss01'] ${lexendDeca.className}`}
+      >
         {children}
       </body>
     </html>

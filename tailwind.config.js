@@ -17,8 +17,8 @@ module.exports = {
       },
       colors: {
         peach: "#FF5559",
-        apricot: "#FF9966"
-      }
+        apricot: "#FF9966",
+      },
     },
   },
   plugins: [],

@@ -1,9 +1,19 @@
-import React from "react"
+import React from "react";
 
 const Logo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={200} height={200} version="1.1" viewBox="0 0 1563 1340">
-<path fill="#ffffff" strokeWidth={2} stroke="white" d="
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={200}
+      height={200}
+      version="1.1"
+      viewBox="0 0 1563 1340"
+    >
+      <path
+        fill="#ffffff"
+        strokeWidth={2}
+        stroke="white"
+        d="
   M 264.88 459.69
   Q 261.02 457.43 256.56 455.45
   Q 168.51 416.44 78.94 381.04
@@ -493,8 +503,10 @@ const Logo = () => {
   C 701.98 974.32 680.70 983.17 659.39 991.13
   Q 658.90 991.31 658.43 991.07
   Z"
-/>
-<path fill="#ffffff" d="
+      />
+      <path
+        fill="#ffffff"
+        d="
   M 264.10 821.90
   C 248.48 812.53 231.78 805.80 215.15 798.50
   C 197.54 790.78 179.54 783.69 161.70 776.42
@@ -512,8 +524,10 @@ const Logo = () => {
   Q 296.85 795.49 285.22 814.68
   C 280.62 822.29 272.71 827.07 264.10 821.90
   Z"
-/>
-<path fill="#ffffff" d="
+      />
+      <path
+        fill="#ffffff"
+        d="
   M 72.95 764.71
   C 75.52 759.02 78.94 759.39 84.00 757.70
   Q 101.03 752.00 117.96 746.14
@@ -583,8 +597,10 @@ const Logo = () => {
   C 70.93 765.89 71.50 765.74 72.28 765.38
   Q 72.74 765.17 72.95 764.71
   Z"
-/>
-<path fill="#ffffff" d="
+      />
+      <path
+        fill="#ffffff"
+        d="
   M 1394.21 773.31
   A 1.05 1.05 0.0 0 1 1395.24 774.35
   C 1395.28 777.39 1395.29 779.54 1394.74 783.12
@@ -608,9 +624,9 @@ const Logo = () => {
   Q 1354.79 778.01 1374.50 775.25
   C 1381.09 774.33 1387.88 773.18 1394.21 773.31
   Z"
-/>
-</svg>
-  )
-}
+      />
+    </svg>
+  );
+};
 
-export default Logo
+export default Logo;

@@ -8,7 +8,7 @@ export const contentType = "image/png";
 export default async function OG() {
   // Font
   const interSemiBold = await fetch(
-    new URL("./fonts/Inter-SemiBold.ttf", import.meta.url)
+    new URL("./fonts/Inter-SemiBold.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -24,7 +24,7 @@ export default async function OG() {
           backgroundColor: "white",
         }}
       >
-        <Image src="/icon" alt="colored s'more"/>
+        <Image src="/icon" alt="colored s'more" />
       </div>
     ),
     {
@@ -36,6 +36,6 @@ export default async function OG() {
           data: interSemiBold,
         },
       ],
-    }
+    },
   );
 }

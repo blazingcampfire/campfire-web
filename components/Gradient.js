@@ -17,7 +17,7 @@ function normalizeColor(hexCode) {
     Object.assign(hexCode, {
       [t]: n,
     }),
-  {}
+  {},
 );
 
 //Essential functionality of WebGl
@@ -46,7 +46,7 @@ class MiniGl {
                     Array(Math.max(0, 32 - e.length)).join(" ") +
                     e +
                     ": ",
-                  ...Array.from(arguments).slice(1)
+                  ...Array.from(arguments).slice(1),
                 ),
                 (_miniGl.lastDebugMsg = t);
             }
@@ -73,7 +73,7 @@ class MiniGl {
               function getUniformVariableDeclarations(uniforms, type) {
                 return Object.entries(uniforms)
                   .map(([uniform, value]) =>
-                    value.getDeclaration(uniform, type)
+                    value.getDeclaration(uniform, type),
                   )
                   .join("\n");
               }
@@ -83,25 +83,25 @@ class MiniGl {
                 "\n              precision highp float;\n            ";
               (material.vertexSource = `\n              ${prefix}\n              attribute vec4 position;\n              attribute vec2 uv;\n              attribute vec2 uvNorm;\n              ${getUniformVariableDeclarations(
                 _miniGl.commonUniforms,
-                "vertex"
+                "vertex",
               )}\n              ${getUniformVariableDeclarations(
                 uniforms,
-                "vertex"
+                "vertex",
               )}\n              ${vertexShaders}\n            `),
                 (material.Source = `\n              ${prefix}\n              ${getUniformVariableDeclarations(
                   _miniGl.commonUniforms,
-                  "fragment"
+                  "fragment",
                 )}\n              ${getUniformVariableDeclarations(
                   uniforms,
-                  "fragment"
+                  "fragment",
                 )}\n              ${fragments}\n            `),
                 (material.vertexShader = getShaderByType(
                   context.VERTEX_SHADER,
-                  material.vertexSource
+                  material.vertexSource,
                 )),
                 (material.fragmentShader = getShaderByType(
                   context.FRAGMENT_SHADER,
-                  material.Source
+                  material.Source,
                 )),
                 (material.program = context.createProgram()),
                 context.attachShader(material.program, material.vertexShader),
@@ -109,7 +109,7 @@ class MiniGl {
                 context.linkProgram(material.program),
                 context.getProgramParameter(
                   material.program,
-                  context.LINK_STATUS
+                  context.LINK_STATUS,
                 ) || console.error(context.getProgramInfoLog(material.program)),
                 context.useProgram(material.program),
                 material.attachUniforms(void 0, _miniGl.commonUniforms),
@@ -124,24 +124,24 @@ class MiniGl {
                     material.attachUniforms(name, uniform);
                   })
                 : "array" == uniforms.type
-                ? uniforms.value.forEach((uniform, i) =>
-                    material.attachUniforms(`${name}[${i}]`, uniform)
-                  )
-                : "struct" == uniforms.type
-                ? Object.entries(uniforms.value).forEach(([uniform, i]) =>
-                    material.attachUniforms(`${name}.${uniform}`, i)
-                  )
-                : (_miniGl.debug("Material.attachUniforms", {
-                    name: name,
-                    uniform: uniforms,
-                  }),
-                  material.uniformInstances.push({
-                    uniform: uniforms,
-                    location: context.getUniformLocation(
-                      material.program,
-                      name
-                    ),
-                  }));
+                  ? uniforms.value.forEach((uniform, i) =>
+                      material.attachUniforms(`${name}[${i}]`, uniform),
+                    )
+                  : "struct" == uniforms.type
+                    ? Object.entries(uniforms.value).forEach(([uniform, i]) =>
+                        material.attachUniforms(`${name}.${uniform}`, i),
+                      )
+                    : (_miniGl.debug("Material.attachUniforms", {
+                        name: name,
+                        uniform: uniforms,
+                      }),
+                      material.uniformInstances.push({
+                        uniform: uniforms,
+                        location: context.getUniformLocation(
+                          material.program,
+                          name,
+                        ),
+                      }));
             }
           },
         },
@@ -168,7 +168,7 @@ class MiniGl {
                   0 === this.typeFn.indexOf("Matrix")
                     ? this.transpose
                     : this.value,
-                  0 === this.typeFn.indexOf("Matrix") ? this.value : null
+                  0 === this.typeFn.indexOf("Matrix") ? this.value : null,
                 );
             }
             //e - name
@@ -188,7 +188,7 @@ class MiniGl {
                       uniform.value[0].getDeclaration(
                         name,
                         type,
-                        uniform.value.length
+                        uniform.value.length,
                       ) +
                       `\nconst int ${name}_length = ${uniform.value.length};`
                     );
@@ -207,7 +207,7 @@ class MiniGl {
                         .map(([name, uniform]) =>
                           uniform
                             .getDeclaration(name, type)
-                            .replace(/^uniform/, "")
+                            .replace(/^uniform/, ""),
                         )
                         .join("") +
                       `\n} ${name}${length > 0 ? `[${length}]` : ""};`
@@ -255,7 +255,7 @@ class MiniGl {
                 (n.quadCount = n.xSegCount * n.ySegCount * 2),
                 (n.attributes.uv.values = new Float32Array(2 * n.vertexCount)),
                 (n.attributes.uvNorm.values = new Float32Array(
-                  2 * n.vertexCount
+                  2 * n.vertexCount,
                 )),
                 (n.attributes.index.values = new Uint16Array(3 * n.quadCount));
               for (let e = 0; e <= n.ySegCount; e++)
@@ -300,7 +300,7 @@ class MiniGl {
                   geometry.attributes.position.values.length ===
                     3 * geometry.vertexCount) ||
                   (geometry.attributes.position.values = new Float32Array(
-                    3 * geometry.vertexCount
+                    3 * geometry.vertexCount,
                   ));
               const o = width / -2,
                 r = height / -2,
@@ -341,7 +341,7 @@ class MiniGl {
                       attribute: attribute,
                       location: attribute.attach(e, mesh.material.program),
                     });
-                  }
+                  },
                 ),
                 _miniGl.meshes.push(mesh),
                 _miniGl.debug("Mesh.constructor", {
@@ -351,16 +351,16 @@ class MiniGl {
             draw() {
               context.useProgram(this.material.program),
                 this.material.uniformInstances.forEach(
-                  ({ uniform: e, location: t }) => e.update(t)
+                  ({ uniform: e, location: t }) => e.update(t),
                 ),
                 this.attributeInstances.forEach(
-                  ({ attribute: e, location: t }) => e.use(t)
+                  ({ attribute: e, location: t }) => e.use(t),
                 ),
                 context.drawElements(
                   this.wireframe ? context.LINES : context.TRIANGLES,
                   this.geometry.attributes.index.values.length,
                   context.UNSIGNED_SHORT,
-                  0
+                  0,
                 );
             }
             remove() {
@@ -384,7 +384,7 @@ class MiniGl {
                 context.bufferData(
                   this.target,
                   this.values,
-                  context.STATIC_DRAW
+                  context.STATIC_DRAW,
                 ));
             }
             attach(e, t) {
@@ -398,7 +398,7 @@ class MiniGl {
                     this.type,
                     this.normalized,
                     0,
-                    0
+                    0,
                   )),
                 n
               );
@@ -413,7 +413,7 @@ class MiniGl {
                     this.type,
                     this.normalized,
                     0,
-                    0
+                    0,
                   ));
             }
           },
@@ -474,7 +474,7 @@ class MiniGl {
     ]),
       this.debug(
         "setOrthographicCamera",
-        this.commonUniforms.projectionMatrix.value
+        this.commonUniforms.projectionMatrix.value,
       );
   }
   render() {
@@ -511,7 +511,7 @@ class Gradient {
       /*e(this, "isStatic", o.disableAmbientAnimations()),*/ e(
         this,
         "scrollingTimeout",
-        void 0
+        void 0,
       ),
       e(this, "scrollingRefreshDelay", 200),
       e(this, "isIntersecting", !1),
@@ -546,7 +546,7 @@ class Gradient {
         clearTimeout(this.scrollingTimeout),
           (this.scrollingTimeout = setTimeout(
             this.handleScrollEnd,
-            this.scrollingRefreshDelay
+            this.scrollingRefreshDelay,
           )),
           this.isGradientLegendVisible && this.hideGradientLegend(),
           this.conf.playing && ((this.isScrolling = !0), this.pause());
@@ -627,7 +627,7 @@ class Gradient {
       0,
       0,
       this.canvas.width,
-      this.canvas.height
+      this.canvas.height,
     );
     gradient.addColorStop(0, "#ffba27");
     gradient.addColorStop(1, "#7038ff");
@@ -782,7 +782,7 @@ class Gradient {
             }),
           },
           type: "struct",
-        })
+        }),
       );
     return (
       (this.vertexShader = [
@@ -793,7 +793,7 @@ class Gradient {
       new this.minigl.Material(
         this.vertexShader,
         this.shaderFiles.fragment,
-        this.uniforms
+        this.uniforms,
       )
     );
   }
